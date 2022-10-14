@@ -22,6 +22,8 @@
 
 - Ruby version:  3.1.2
 
+- Rails version: 7.0.4
+
 - Node version: 12.22.12
 
 - Yarn version: 1.22.19
