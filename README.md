@@ -35,3 +35,5 @@ bundle install
 bundle exec rails db:create db:schema:load db:seed
 bundle exec rails s
 ```
+
+[Repo link](https://github.com/boring-anime/assignment.git)
