@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="row">
+<div class="col">
+<h2>Listing projects</h2>
+</div>
+<div class="col col-lg-2">
+<%= link_to "New project", new_project_path, type: "button", class: "btn btn-primary btn-sm float-end" %>
+</div>
+</br>
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Project Name</th>
+      <th scope="col">No of tasks</th>
+      <th scope="col" colspan="3">Actions</th>
+    </tr>
+  </thead>
+  <tbody >
+
+    <% @projects.each do |project| %>
+      <%= render project %>
+      <% end %>
+  </tbody>
+</table>
+<div class="d-flex align-items-center justify-content-center">
+  <%= paginate @projects%>
+</div>
